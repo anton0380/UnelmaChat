@@ -1,8 +1,9 @@
-QT += qml quick
+QT += qml quick widgets
 
 CONFIG += c++11
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    systemtray.cpp
 
 RESOURCES += qml.qrc
 
@@ -27,3 +28,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+HEADERS += \
+    systemtray.h
+
+CODECFORTR = UTF-8
