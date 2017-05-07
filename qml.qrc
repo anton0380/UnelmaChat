@@ -4,5 +4,9 @@
         <file>Page1.qml</file>
         <file>Page1Form.ui.qml</file>
         <file>qtquickcontrols2.conf</file>
+        <file>icons/tray-away.png</file>
+        <file>icons/tray-busy.png</file>
+        <file>icons/tray-offline.png</file>
+        <file>icons/tray-online.png</file>
     </qresource>
 </RCC>
