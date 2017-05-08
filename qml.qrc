@@ -12,5 +12,16 @@
         <file>Settings.qml</file>
         <file>Options.qml</file>
         <file>OptionsForm.ui.qml</file>
+        <file>icons/avatar_boy.png</file>
+        <file>icons/avatar_female.png</file>
+        <file>icons/avatar_girl.png</file>
+        <file>icons/avatar_male.png</file>
+        <file>icons/avatar_malecostume.png</file>
+        <file>icons/avatar_matureman1.png</file>
+        <file>icons/avatar_matureman2.png</file>
+        <file>icons/avatar_maturewoman.png</file>
+        <file>icons/avatar_supportfemale.png</file>
+        <file>icons/avatar_supportmale.png</file>
+        <file>icons/tray-online.ico</file>
     </qresource>
 </RCC>

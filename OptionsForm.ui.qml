@@ -5,13 +5,13 @@ import QtQuick.Layouts 1.0
 Item {
     id: options
     width: 400
-    height: 400
+    height: 600
     property alias checkBoxTray: checkBoxTray
 
     Button {
         id: buttonApply
         x: 8
-        y: 229
+        y: 403
         text: qsTr("Apply")
     }
 
@@ -32,7 +32,7 @@ Item {
     }
 
     TextField {
-        id: textField
+        id: textFieldPort
         x: 8
         y: 131
         text: qsTr("12345")
@@ -42,20 +42,50 @@ Item {
         id: label
         x: 134
         y: 144
-        text: qsTr("TCP Port")
+        text: qsTr("TCP port")
     }
 
     TextField {
         id: textField1
         x: 8
-        y: 180
+        y: 243
         text: qsTr("Anonimous")
     }
 
     Label {
         id: label1
         x: 134
-        y: 192
+        y: 251
         text: qsTr("User name")
+    }
+
+    TextField {
+        id: textFieldConnectPort
+        x: 8
+        y: 180
+        text: qsTr("12345")
+    }
+
+    Label {
+        id: label2
+        x: 134
+        y: 193
+        text: qsTr("TCP connect port (for test)")
+    }
+
+    Image {
+        id: image
+        x: 8
+        y: 297
+        width: 100
+        height: 100
+        source: "icons/avatar_boy.png"
+    }
+
+    Label {
+        id: label3
+        x: 123
+        y: 339
+        text: qsTr("Avatar")
     }
 }

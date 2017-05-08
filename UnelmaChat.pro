@@ -36,3 +36,5 @@ HEADERS += \
 CODECFORTR = UTF-8
 
 DISTFILES +=
+
+RC_ICONS = icons/tray-online.ico
