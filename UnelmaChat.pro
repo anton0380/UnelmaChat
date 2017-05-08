@@ -30,6 +30,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    systemtray.h
+    systemtray.h \
+    config.h
 
 CODECFORTR = UTF-8
+
+DISTFILES +=

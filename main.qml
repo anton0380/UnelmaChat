@@ -2,6 +2,7 @@ import QtQuick 2.7
 import QtQuick.Controls 2.0
 import QtQuick.Layouts 1.0
 import QtQuick.Window 2.0
+//import QtQuick.Controls.Material 2.0
 
 ApplicationWindow {
     id: application
@@ -9,9 +10,13 @@ ApplicationWindow {
     width: 640
     height: 480
     title: qsTr("Unelma Chat")
+    //Material.theme: Material.Light
+    //Material.primary: Material.BlueGray
+    //Material.accent: Material.Teal
 
     // for ignore checkbox
     property bool ignoreCheck: false
+    property bool checkTray: true
 
     /* Connections
      * Connect to system tray
@@ -39,11 +44,18 @@ ApplicationWindow {
         }
     }
 
-    // test checkbox
-    CheckBox {
-        id: checkTray
-        anchors.centerIn: parent
-        text: qsTr("To tray on push exit")
+
+    header: Rectangle {
+        TabBar {
+            id: tabBar
+            currentIndex: swipeView.currentIndex
+            TabButton {
+                text: qsTr("Chat")
+            }
+            TabButton {
+                text: qsTr("Settings")
+            }
+        }
     }
 
     // on window exit
@@ -52,7 +64,7 @@ ApplicationWindow {
          * hidden window.
          * another - close window
          * */
-        if(checkTray.checked === true && ignoreCheck === false){
+        if(checkTray === true && ignoreCheck === false){
             close.accepted = false
             application.hide()
         } else {
@@ -61,23 +73,21 @@ ApplicationWindow {
         }
     }
 
+
+
     //--------------------------------
+        SwipeView {
+            id: swipeView
+            anchors.fill: parent
+            currentIndex: tabBar.currentIndex
 
-//    SwipeView {
-//        id: swipeView
-//        anchors.fill: parent
-//        currentIndex: tabBar.currentIndex
+            Chat {
+            }
 
-//        Page1 {
-//        }
+            Settings {
+            }
+        }
 
-//        Page {
-//            Label {
-//                text: qsTr("Second page")
-//                anchors.centerIn: parent
-//            }
-//        }
-//    }
 
 //    footer: TabBar {
 //        id: tabBar

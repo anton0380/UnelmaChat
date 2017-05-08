@@ -8,5 +8,7 @@
         <file>icons/tray-busy.png</file>
         <file>icons/tray-offline.png</file>
         <file>icons/tray-online.png</file>
+        <file>Chat.qml</file>
+        <file>Settings.qml</file>
     </qresource>
 </RCC>
