@@ -84,7 +84,9 @@ ApplicationWindow {
             Chat {
             }
 
-            Settings {
+            //Settings {
+            Options {
+            //Page1 {
             }
         }
 

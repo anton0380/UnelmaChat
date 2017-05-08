@@ -10,5 +10,7 @@
         <file>icons/tray-online.png</file>
         <file>Chat.qml</file>
         <file>Settings.qml</file>
+        <file>Options.qml</file>
+        <file>OptionsForm.ui.qml</file>
     </qresource>
 </RCC>
