@@ -11,12 +11,11 @@ Item {
     property alias imageAvatar: imageAvatar
     property alias checkBoxTray: checkBoxTray
     property alias textFieldPort: textFieldPort
-    property alias textFieldConnectPort: textFieldConnectPort
 
     Button {
         id: buttonApply
         x: 8
-        y: 403
+        y: 335
         text: qsTr("Apply")
     }
 
@@ -53,35 +52,21 @@ Item {
     TextField {
         id: textField1
         x: 8
-        y: 243
+        y: 180
         text: qsTr("Anonimous")
     }
 
     Label {
         id: label1
         x: 134
-        y: 251
-        text: qsTr("User name")
-    }
-
-    TextField {
-        id: textFieldConnectPort
-        x: 8
-        y: 180
-        text: qsTr("12345")
-    }
-
-    Label {
-        id: label2
-        x: 134
         y: 193
-        text: qsTr("TCP connect port (for test)")
+        text: qsTr("User name")
     }
 
     Image {
         id: imageAvatar
         x: 8
-        y: 297
+        y: 229
         width: 100
         height: 100
         source: "icons/avatar_boy.png"
@@ -94,8 +79,8 @@ Item {
 
     Label {
         id: label3
-        x: 123
-        y: 339
+        x: 121
+        y: 271
         text: qsTr("Avatar")
     }
 }

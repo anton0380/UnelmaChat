@@ -20,7 +20,6 @@ OptionsForm {
         application.checkTray = checkBoxTray.checkState;
     }
     textFieldPort.validator: IntValidator {bottom: 1024; top: 65535;}
-    textFieldConnectPort.validator: IntValidator {bottom: 1024; top: 65535;}
 }
 
 
