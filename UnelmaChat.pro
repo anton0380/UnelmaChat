@@ -3,7 +3,9 @@ QT += qml quick widgets
 CONFIG += c++11
 
 SOURCES += main.cpp \
-    systemtray.cpp
+    systemtray.cpp \
+    settings.cpp \
+    chat.cpp
 
 RESOURCES += qml.qrc
 
@@ -31,7 +33,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     systemtray.h \
-    config.h
+    config.h \
+    settings.h \
+    chat.h
 
 CODECFORTR = UTF-8
 

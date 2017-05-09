@@ -5,6 +5,7 @@
 #include "systemtray.h"
 #include <QDebug>
 #include "config.h"
+#include "chat.h"
 
 int main(int argc, char *argv[])
 {
@@ -19,6 +20,6 @@ int main(int argc, char *argv[])
     // add systemTray methods to QML context
     context->setContextProperty("systemTray", systemTray);
     engine.load(QUrl(QLatin1String("qrc:/main.qml")));
-
+    Chat chat;
     return app.exec();
 }
