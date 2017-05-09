@@ -23,5 +23,8 @@
         <file>icons/avatar_supportfemale.png</file>
         <file>icons/avatar_supportmale.png</file>
         <file>icons/tray-online.ico</file>
+        <file>Avatars.qml</file>
+        <file>AvatarsForm.ui.qml</file>
+        <file>AvatarsDialog.qml</file>
     </qresource>
 </RCC>

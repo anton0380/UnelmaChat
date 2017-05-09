@@ -3,6 +3,7 @@ import QtQuick.Controls 2.0
 import QtQuick.Layouts 1.0
 import QtQuick.Window 2.0
 //import QtQuick.Controls.Material 2.0
+//import QtQuick.Dialogs 1.2
 
 ApplicationWindow {
     id: application
@@ -16,7 +17,7 @@ ApplicationWindow {
 
     // for ignore checkbox
     property bool ignoreCheck: false
-    property bool checkTray: true
+    property bool checkTray: false//true
 
     /* Connections
      * Connect to system tray
@@ -101,4 +102,7 @@ ApplicationWindow {
 //            text: qsTr("Second")
 //        }
 //    }
+
 }
+
+

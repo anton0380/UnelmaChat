@@ -6,6 +6,9 @@ Item {
     id: options
     width: 400
     height: 600
+    property alias buttonApply: buttonApply
+    property alias mouseAreaAvatar: mouseAreaAvatar
+    property alias imageAvatar: imageAvatar
     property alias checkBoxTray: checkBoxTray
 
     Button {
@@ -74,12 +77,17 @@ Item {
     }
 
     Image {
-        id: image
+        id: imageAvatar
         x: 8
         y: 297
         width: 100
         height: 100
         source: "icons/avatar_boy.png"
+
+        MouseArea {
+            id: mouseAreaAvatar
+            anchors.fill: parent
+        }
     }
 
     Label {
