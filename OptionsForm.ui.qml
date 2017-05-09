@@ -10,6 +10,8 @@ Item {
     property alias mouseAreaAvatar: mouseAreaAvatar
     property alias imageAvatar: imageAvatar
     property alias checkBoxTray: checkBoxTray
+    property alias textFieldPort: textFieldPort
+    property alias textFieldConnectPort: textFieldConnectPort
 
     Button {
         id: buttonApply

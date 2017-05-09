@@ -8,16 +8,19 @@ OptionsForm {
 
     buttonApply.onClicked: {
         //avatarsdlg.open()
-}
+    }
 
     mouseAreaAvatar.cursorShape: Qt.PointingHandCursor
     mouseAreaAvatar.onClicked: {
-        avatarsdlg.open()
-}
+        avatarsdlg.open();
+        avatarsdlg.setAvatarSource(imageAvatar.source)
+    }
     checkBoxTray.checked: application.checkTray
     checkBoxTray.onCheckStateChanged: {
-        application.checkTray = checkBoxTray.checkState
+        application.checkTray = checkBoxTray.checkState;
     }
+    textFieldPort.validator: IntValidator {bottom: 1024; top: 65535;}
+    textFieldConnectPort.validator: IntValidator {bottom: 1024; top: 65535;}
 }
 
 

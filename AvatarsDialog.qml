@@ -7,12 +7,15 @@ import QtQuick.Controls 2.1
 Dialog {
     visible: true
     title: qsTr("Select Avatar")
+    function setAvatarSource(source) {
+        avatarsout.setCurrentImagePath(source)
+    }
     contentItem: Rectangle {
         //color: "lightskyblue"
         implicitWidth: 440
         implicitHeight: 340
         Avatars {
-
+            id: avatarsout
         }
 
 //        Text {
