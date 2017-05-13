@@ -22,6 +22,7 @@ Item {
 
     CheckBox {
         id: checkBoxTray
+        objectName: "checkBoxTray"
         x: 8
         y: 66
         text: qsTr("To tray on push exit")
@@ -38,6 +39,7 @@ Item {
 
     TextField {
         id: textFieldPort
+        objectName: "textFieldPort"
         x: 8
         y: 131
         text: qsTr("12345")
@@ -55,6 +57,7 @@ Item {
         objectName: "textFieldUserName"
         x: 8
         y: 180
+        text: qsTr("Anonimous")
     }
 
     Label {
@@ -66,6 +69,7 @@ Item {
 
     Image {
         id: imageAvatar
+        objectName: "imageAvatar"
         x: 8
         y: 229
         width: 100

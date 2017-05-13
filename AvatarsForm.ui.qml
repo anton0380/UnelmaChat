@@ -43,6 +43,7 @@ Item {
 
         Image {
             id: image
+            objectName: "image"
             x: 0
             y: 0
             width: 100

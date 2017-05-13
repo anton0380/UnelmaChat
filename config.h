@@ -10,5 +10,13 @@
 #define DEFAULT_TCP_PORT 43152
 #define DEFAULT_SERVER_IP "127.0.0.1"
 #define DEFAULT_USER_NAME QObject::tr("Unknown")
+#ifdef QT_DEBUG
+    // in debug mode not necessarily default tray checked
+    #define DEFAULT_CHECKED_TRAY false
+#else
+    #define DEFAULT_CHECKED_TRAY true
+#endif
+
+#define DEFAULT_AVATAR_PATH "qrc:/icons/avatar_boy.png"
 
 #endif // CONFIG_H
