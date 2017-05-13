@@ -6,6 +6,7 @@ Item {
     id: options
     width: 400
     height: 600
+    property alias textFieldUserName: textFieldUserName
     property alias buttonApply: buttonApply
     property alias mouseAreaAvatar: mouseAreaAvatar
     property alias imageAvatar: imageAvatar
@@ -49,11 +50,11 @@ Item {
         text: qsTr("TCP port")
     }
 
-    TextField {
-        id: textField1
+    TextFieldUserName {
+        id: textFieldUserName
+        objectName: "textFieldUserName"
         x: 8
         y: 180
-        text: qsTr("Anonimous")
     }
 
     Label {

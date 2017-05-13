@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include "settings.h"
+#include "options.h"
 
 class Chat : public QObject
 {
@@ -17,6 +18,8 @@ public slots:
 
 private:
     Settings m_settings;
+    Options * m_options;
+    QObject* m_root;
 };
 
 #endif // CHAT_H

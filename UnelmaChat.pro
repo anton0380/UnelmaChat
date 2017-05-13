@@ -5,7 +5,8 @@ CONFIG += c++11
 SOURCES += main.cpp \
     systemtray.cpp \
     settings.cpp \
-    chat.cpp
+    chat.cpp \
+    options.cpp
 
 RESOURCES += qml.qrc
 
@@ -35,7 +36,8 @@ HEADERS += \
     systemtray.h \
     config.h \
     settings.h \
-    chat.h
+    chat.h \
+    options.h
 
 CODECFORTR = UTF-8
 

@@ -15,6 +15,8 @@ ApplicationWindow {
     //Material.primary: Material.BlueGray
     //Material.accent: Material.Teal
 
+    signal qmlSignal(string msg)
+
     // for ignore checkbox
     property bool ignoreCheck: false
     property bool checkTray: false//true
@@ -91,8 +93,7 @@ ApplicationWindow {
             }
         }
 
-
-//    footer: TabBar {
+        //    footer: TabBar {
 //        id: tabBar
 //        currentIndex: swipeView.currentIndex
 //        TabButton {

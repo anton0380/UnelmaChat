@@ -20,6 +20,13 @@ int main(int argc, char *argv[])
     // add systemTray methods to QML context
     context->setContextProperty("systemTray", systemTray);
     engine.load(QUrl(QLatin1String("qrc:/main.qml")));
-    Chat chat;
+
+    Chat * chat = new Chat(&engine);
+
+    //QObject* root = engine.rootObjects()[0];
+    //QObject* field1 = root->findChild<QObject*>("textFieldUserName");
+    //field1->setProperty("text", "ZZZ");
+
+
     return app.exec();
 }

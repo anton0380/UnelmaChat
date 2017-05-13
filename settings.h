@@ -11,6 +11,18 @@ public:
     explicit Settings(QObject *parent = 0);
     ~Settings();
 
+    QString getUserName();
+    void setUserName(QString userName);
+    QString getAvatar();
+    void setAvatar(QString avatar);
+    QString getTcpPort();
+    void setTcpPort(QString tcpPort);
+
+    // set or get value
+    void setValue(QString group, QString key, QVariant value);
+    QVariant getValue(QString group, QString key, QVariant defaultValue);
+
+
 signals:
 
 public slots:
