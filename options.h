@@ -14,6 +14,8 @@ public:
 signals:
 
 public slots:
+    void apply();//const QString &msg);
+
 
 private:
     QQmlContext * m_context;

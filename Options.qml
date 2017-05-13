@@ -7,7 +7,7 @@ OptionsForm {
     }
 
     buttonApply.onClicked: {
-        qmlSignal("hello")
+        applyOptions()//"hello")
         //avatarsdlg.open()
     }
 

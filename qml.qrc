@@ -26,6 +26,5 @@
         <file>Avatars.qml</file>
         <file>AvatarsForm.ui.qml</file>
         <file>AvatarsDialog.qml</file>
-        <file>TextFieldUserName.ui.qml</file>
     </qresource>
 </RCC>

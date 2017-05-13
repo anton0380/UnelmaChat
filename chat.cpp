@@ -1,5 +1,4 @@
 #include "chat.h"
-#include "settings.h"
 #include <QDebug>
 #include <QQmlApplicationEngine>
 

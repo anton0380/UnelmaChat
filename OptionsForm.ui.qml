@@ -50,7 +50,7 @@ Item {
         text: qsTr("TCP port")
     }
 
-    TextFieldUserName {
+    TextField {
         id: textFieldUserName
         objectName: "textFieldUserName"
         x: 8

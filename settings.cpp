@@ -2,56 +2,10 @@
 #include <QCoreApplication>
 #include <QDebug>
 
-Settings::Settings(QObject *parent) : QObject(parent)
-{
-    qDebug() << "Settings create";
-    QString fileFullName = QCoreApplication::applicationDirPath()+"/config.ini";
-    qDebug() << "Settings file : " + fileFullName;
-    m_settings = new QSettings(fileFullName, QSettings::IniFormat, this);
-}
+//QCoreApplication::setOrganizationName("MySoft");
+//QCoreApplication::setOrganizationDomain("mysoft.com");
+//QCoreApplication::setApplicationName("Star Runner");
 
-Settings::~Settings()
-{
-    qDebug() << "Settings destroy";
-}
-
-QString Settings::getUserName()
-{
-
-}
-
-void Settings::setUserName(QString userName)
-{
-
-}
-
-QString Settings::getAvatar()
-{
-
-}
-
-void Settings::setAvatar(QString avatar)
-{
-
-}
-
-QString Settings::getTcpPort()
-{
-
-}
-
-void Settings::setTcpPort(QString tcpPort)
-{
-
-}
-
-void Settings::setValue(QString group, QString key, QVariant value)
-{
-    m_settings->setValue(group+"/"+key, value);
-}
-
-QVariant Settings::getValue(QString group, QString key, QVariant defaultValue)
-{
-    m_settings->value(key,defaultValue);
-}
-
+//qDebug() << "Settings file : " + QCoreApplication::applicationDirPath()+"/config.ini";
+//QSettings settings(QCoreApplication::applicationDirPath()+"/config.ini", QSettings::IniFormat);
+QSettings settings("config.ini", QSettings::IniFormat);

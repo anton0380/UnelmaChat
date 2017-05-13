@@ -4,9 +4,9 @@ CONFIG += c++11
 
 SOURCES += main.cpp \
     systemtray.cpp \
-    settings.cpp \
     chat.cpp \
-    options.cpp
+    options.cpp \
+    settings.cpp
 
 RESOURCES += qml.qrc
 
@@ -35,9 +35,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 HEADERS += \
     systemtray.h \
     config.h \
-    settings.h \
     chat.h \
-    options.h
+    options.h \
+    settings.h
 
 CODECFORTR = UTF-8
 
