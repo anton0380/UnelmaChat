@@ -8,7 +8,7 @@
         <file>icons/tray-busy.png</file>
         <file>icons/tray-offline.png</file>
         <file>icons/tray-online.png</file>
-        <file>Chat.qml</file>
+        <file>Chat_old.qml</file>
         <file>Settings.qml</file>
         <file>Options.qml</file>
         <file>OptionsForm.ui.qml</file>
@@ -26,5 +26,7 @@
         <file>Avatars.qml</file>
         <file>AvatarsForm.ui.qml</file>
         <file>AvatarsDialog.qml</file>
+        <file>Chat.qml</file>
+        <file>ChatForm.ui.qml</file>
     </qresource>
 </RCC>
