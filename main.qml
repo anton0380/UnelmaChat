@@ -82,8 +82,8 @@ ApplicationWindow {
         SwipeView {
             id: swipeView
             anchors.fill: parent
+            anchors.topMargin: 60
             currentIndex: tabBar.currentIndex
-
             Chat {
             }
 

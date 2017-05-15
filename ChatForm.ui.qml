@@ -6,12 +6,12 @@ Item {
     id: chatItem
     width: 400
     height: 400
-    //anchors.fill: parent
 
+    //anchors.fill: parent
     ListView {
         id: listView
         x: 8
-        y: 66
+        y: 8
         width: 173
         height: 190
         delegate: Item {
@@ -55,16 +55,6 @@ Item {
                 colorCode: "green"
             }
         }
-    }
-
-    Rectangle {
-        id: rectangle
-        x: 0
-        width: 400
-        height: 60
-        color: "#ffffff"
-        anchors.top: parent.top
-        anchors.topMargin: 0
     }
 
     Button {

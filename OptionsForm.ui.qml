@@ -16,7 +16,7 @@ Item {
     Button {
         id: buttonApply
         x: 8
-        y: 335
+        y: 266
         text: qsTr("Apply")
     }
 
@@ -24,31 +24,22 @@ Item {
         id: checkBoxTray
         objectName: "checkBoxTray"
         x: 8
-        y: 66
+        y: 8
         text: qsTr("To tray on push exit")
-    }
-
-    Rectangle {
-        id: rectangle
-        x: 0
-        y: 0
-        width: 400
-        height: 60
-        color: "#ffffff"
     }
 
     TextField {
         id: textFieldPort
         objectName: "textFieldPort"
         x: 8
-        y: 131
+        y: 62
         text: qsTr("12345")
     }
 
     Label {
         id: label
         x: 134
-        y: 144
+        y: 75
         text: qsTr("TCP port")
     }
 
@@ -56,14 +47,14 @@ Item {
         id: textFieldUserName
         objectName: "textFieldUserName"
         x: 8
-        y: 180
+        y: 111
         text: qsTr("Anonimous")
     }
 
     Label {
         id: label1
         x: 134
-        y: 193
+        y: 124
         text: qsTr("User name")
     }
 
@@ -71,7 +62,7 @@ Item {
         id: imageAvatar
         objectName: "imageAvatar"
         x: 8
-        y: 229
+        y: 160
         width: 100
         height: 100
         source: "icons/avatar_boy.png"
@@ -84,8 +75,8 @@ Item {
 
     Label {
         id: label3
-        x: 121
-        y: 271
+        x: 114
+        y: 202
         text: qsTr("Avatar")
     }
 }
