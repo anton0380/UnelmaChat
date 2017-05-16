@@ -28,5 +28,8 @@
         <file>AvatarsDialog.qml</file>
         <file>Chat.qml</file>
         <file>ChatForm.ui.qml</file>
+        <file>ConnectedUser.qml</file>
+        <file>ConnectedUserForm.ui.qml</file>
+        <file>ChatLib.js</file>
     </qresource>
 </RCC>
