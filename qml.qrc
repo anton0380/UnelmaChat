@@ -31,5 +31,7 @@
         <file>ConnectedUser.qml</file>
         <file>ConnectedUserForm.ui.qml</file>
         <file>ChatLib.js</file>
+        <file>components/UseIp.qml</file>
+        <file>components/UseIpForm.ui.qml</file>
     </qresource>
 </RCC>

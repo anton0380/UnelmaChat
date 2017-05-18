@@ -1,6 +1,10 @@
 import QtQuick 2.7
 
 OptionsForm {
+    buttonAdd.onClicked: {
+        console.log("Add new Ip connects");
+        listModelIpConnects.append({ip: "192.168.0.1", port: "23321"});
+    }
 
     AvatarsDialog {
         id: avatarsdlg
